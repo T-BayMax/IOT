@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_labels_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/label_bg"
+    android:paddingBottom="@dimen/x2"
+    android:paddingLeft="@dimen/x6"
+    android:paddingRight="@dimen/x6"
+    android:paddingTop="@dimen/x2"
+    android:textColor="@drawable/label_text_color">
+
+</TextView>

@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">IOT</string>
+    <string name="str_title">标题</string>
+    <string name="title_activity_drawer">IOT</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="sensor_list">传感器列表</string>
+    <string name="software_list">软件技术列表</string>
+    <string name="combination_list">传感器组合</string>
+    <string name="mashup_list">混搭组合</string>
+    <string name="management_list">我的组合</string>
+    <string name="control_list">我的组合设置</string>
+
+    <string name="action_settings">设置</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="str_pwd_amend">修改密码</string>
+    <string name="str_register">注册</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">邮箱</string>
+    <string name="prompt_password">密码</string>
+    <string name="prompt_affirm_password">确认密码</string>
+    <string name="action_sign_in">登录</string>
+    <string name="security_code">验证码</string>
+    <string name="action_sign_in_short">Sign in</string>
+
+
+    <string name="error_invalid_email">邮箱输入有误</string>
+    <string name="error_invalid_password">密码不能为空</string>
+    <string name="error_incorrect_password">密码不能小于6位</string>
+    <string name="error_affirm_password">两次输入密码不一致</string>
+    <string name="error_field_required">选项不能为空</string>
+    <string name="error_security_code">验证码格式错误</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_register">Register</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

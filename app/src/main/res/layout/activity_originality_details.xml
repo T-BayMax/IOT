@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/sddd"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_custom_toolbar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/item_border" />
+
+    <com.bjike.wl.iot.ui.view.DetailScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_content_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/holo_blue_dark"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/x6"
+                        android:paddingRight="@dimen/x6"
+                        android:paddingTop="@dimen/x6">
+
+                        <ImageView
+                            android:id="@+id/iv_images"
+                            android:layout_width="@dimen/x60"
+                            android:layout_height="@dimen/x60"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"
+                                android:layout_weight="4"
+                                android:background="@android:color/white" />
+
+                            <TextView
+                                android:id="@+id/tv_porstait"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:padding="@dimen/x4"
+                                android:text="OriginalityName"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/x16" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"
+                                android:layout_weight="4"
+
+                                android:background="@android:color/white" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_user_name"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="userName"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/x14" />
+
+                            <TextView
+                                android:id="@+id/tv_time"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="2018-1-25"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/x14" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/ll_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ll_header"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:id="@+id/view_h"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/y8"
+                            android:background="@android:color/holo_blue_dark" />
+
+                        <View
+                            android:id="@+id/view_b"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/y8"
+                            android:layout_below="@id/view_h" />
+
+                        <com.bjike.wl.iot.ui.view.RatingBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/y16"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            app:clickable="false"
+                            app:starCount="5"
+                            app:starEmpty="@mipmap/star_small_grey"
+                            app:starFill="@mipmap/star_small_yellow"
+                            app:starImageSize="@dimen/y16"
+                            app:starPadding="@dimen/x4"
+                            app:starStep="2" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <com.bjike.wl.iot.ui.view.LabelsView
+                    android:id="@+id/labels"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/x6"
+                    app:labelBackground="@drawable/label_bg"
+                    app:labelTextColor="@drawable/label_text_color"
+                    app:labelTextPaddingBottom="@dimen/x4"
+                    app:labelTextPaddingLeft="@dimen/x8"
+                    app:labelTextPaddingRight="@dimen/x8"
+                    app:labelTextPaddingTop="@dimen/x4"
+                    app:labelTextSize="@dimen/x14"
+                    app:lineMargin="@dimen/x8"
+                    app:selectType="NONE"
+                    app:wordMargin="@dimen/x4" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/x6">
+
+                    <ImageView
+                        android:layout_width="@dimen/x18"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/x10"
+                        android:src="@mipmap/img_comment" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="产品介绍："
+                        android:textSize="@dimen/x16" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/x6"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+                    android:textSize="@dimen/x14" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:padding="@dimen/x6">
+
+                    <ImageView
+                        android:layout_width="@dimen/x18"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/x10"
+                        android:src="@mipmap/img_comment" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="应用场景："
+                        android:textSize="@dimen/x16" />
+                </LinearLayout>
+
+                <com.bjike.wl.iot.ui.view.LabelsView
+                    android:id="@+id/lv_service_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/x6"
+                    app:labelBackground="@drawable/label_bg"
+                    app:labelTextColor="@drawable/label_text_color"
+                    app:labelTextPaddingBottom="@dimen/x4"
+                    app:labelTextPaddingLeft="@dimen/x8"
+                    app:labelTextPaddingRight="@dimen/x8"
+                    app:labelTextPaddingTop="@dimen/x4"
+                    app:labelTextSize="@dimen/x14"
+                    app:lineMargin="@dimen/x8"
+                    app:selectType="NONE"
+                    app:wordMargin="@dimen/x4" />
+
+
+                <com.bjike.wl.iot.ui.view.LabelsView
+                    android:id="@+id/lv_scene"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/x6"
+                    app:labelBackground="@drawable/label_bg"
+                    app:labelTextColor="@drawable/label_text_color"
+                    app:labelTextPaddingBottom="@dimen/x4"
+                    app:labelTextPaddingLeft="@dimen/x8"
+                    app:labelTextPaddingRight="@dimen/x8"
+                    app:labelTextPaddingTop="@dimen/x4"
+                    app:labelTextSize="@dimen/x14"
+                    app:lineMargin="@dimen/x8"
+                    app:selectType="NONE"
+                    app:wordMargin="@dimen/x4" />
+
+                <com.bjike.wl.iot.ui.view.LabelsView
+                    android:id="@+id/lv_crowd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/x6"
+                    app:labelBackground="@drawable/label_bg"
+                    app:labelTextColor="@drawable/label_text_color"
+                    app:labelTextPaddingBottom="@dimen/x4"
+                    app:labelTextPaddingLeft="@dimen/x8"
+                    app:labelTextPaddingRight="@dimen/x8"
+                    app:labelTextPaddingTop="@dimen/x4"
+                    app:labelTextSize="@dimen/x14"
+                    app:lineMargin="@dimen/x8"
+                    app:selectType="NONE"
+                    app:wordMargin="@dimen/x4" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x1"
+                    android:layout_marginBottom="@dimen/y4"
+                    android:layout_marginTop="@dimen/y4"
+                    android:background="@android:color/white" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/x6">
+
+                    <LinearLayout
+                        android:id="@+id/ll_like"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/x2">
+
+                        <ImageView
+                            android:id="@+id/iv_like"
+                            android:layout_width="@dimen/x16"
+                            android:layout_height="@dimen/x16"
+                            android:src="@mipmap/img_like" />
+
+                        <TextView
+                            android:id="@+id/tv_like"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1万"
+                            android:textSize="@dimen/x14" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_stamp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/ll_like"
+                        android:layout_toRightOf="@id/ll_like"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/x2">
+
+                        <ImageView
+                            android:id="@+id/iv_stamp"
+                            android:layout_width="@dimen/x16"
+                            android:layout_height="@dimen/x16"
+                            android:src="@mipmap/img_stamp" />
+
+                        <TextView
+                            android:id="@+id/tv_stamp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1万"
+                            android:textSize="@dimen/x14" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/x2">
+
+                        <ImageView
+                            android:id="@+id/iv_comment"
+                            android:layout_width="@dimen/x16"
+                            android:layout_height="@dimen/x16"
+                            android:src="@mipmap/img_comment" />
+
+                        <TextView
+                            android:id="@+id/tv_comment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1万"
+                            android:textSize="@dimen/x14" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:padding="@dimen/x6">
+
+                <ImageView
+                    android:layout_width="@dimen/x18"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/x10"
+                    android:src="@mipmap/img_comment" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="精彩评论："
+                    android:textSize="@dimen/x16" />
+            </LinearLayout>
+
+            <com.bjike.wl.iot.ui.view.DetailListView
+                android:id="@+id/rv_comment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/x6"></com.bjike.wl.iot.ui.view.DetailListView>
+        </LinearLayout>
+    </com.bjike.wl.iot.ui.view.DetailScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="#ffffffff"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_send"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="发送"
+                android:textColor="@color/col_6c0"
+                android:textSize="@dimen/x18" />
+
+            <EditText
+                android:id="@+id/et_comment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/x4"
+                android:layout_toLeftOf="@+id/tv_send"
+                android:layout_toStartOf="@+id/tv_send"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

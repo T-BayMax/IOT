@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true"
+        android:color="#4DB6AC"></item> <!-- selected颜色 -->
+    <item android:state_pressed="true"
+        android:color="#4DB6AC"/> <!-- pressed颜色 -->
+    <item android:state_focused="true"
+        android:color="#4DB6AC"/> <!-- focused颜色 -->
+    <item android:color="@color/equipment_bg"/> <!-- default颜色 -->
+
+</selector>

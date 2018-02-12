@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_portfolio"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/equipment_bg"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/equipment_bg"
+        android:scrollbars="horizontal" />
+
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rv_control"
+        android:padding="10dp"
+        android:text="将上面传感器拖动到下面空白处可进行组合"
+        android:textColor="@android:color/white"
+        android:textSize="14dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_clear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@color/equipment_bord"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="清空"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_30" />
+
+        <TextView
+            android:id="@+id/tv_post_portfolio"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/equipment_bord"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="组合"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_30" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_equipment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout"
+        android:layout_below="@+id/text_view"
+        android:background="@android:color/white"></RelativeLayout>
+
+</RelativeLayout>

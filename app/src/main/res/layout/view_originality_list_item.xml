@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/sddd"
+    android:id="@+id/rl_originality"
+    android:padding="@dimen/x2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/x6"
+        android:paddingRight="@dimen/x6"
+        android:paddingLeft="@dimen/x6">
+
+        <ImageView
+            android:id="@+id/iv_images"
+            android:layout_width="@dimen/x60"
+            android:layout_height="@dimen/x60"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="4"
+                android:background="@android:color/white" />
+
+            <TextView
+                android:id="@+id/tv_porstait"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/x4"
+                android:text="OriginalityName"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/x14" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="4"
+
+                android:background="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="userName"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/x12" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2018-1-25"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/x12" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_rb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_header"
+        android:layout_centerHorizontal="true"
+
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/view_h"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y8"
+            android:background="@android:color/holo_blue_dark" />
+
+        <View
+            android:id="@+id/view_b"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y8"
+            android:layout_below="@id/view_h" />
+
+        <com.bjike.wl.iot.ui.view.RatingBar
+            android:id="@+id/rb_star"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y16"
+            app:starCount="5"
+            app:starEmpty="@mipmap/star_small_grey"
+            app:starFill="@mipmap/star_small_yellow"
+            app:starImageSize="@dimen/y16"
+            app:starPadding="@dimen/x4"
+            app:starStep="2"
+            app:clickable="false"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_rb"
+        android:orientation="vertical"
+        android:padding="@dimen/x6">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+            android:textSize="@dimen/x12" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:layout_marginBottom="@dimen/y6"
+            android:layout_marginTop="@dimen/y6"
+            android:background="@android:color/white" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/x2">
+
+                <ImageView
+                    android:id="@+id/iv_like"
+                    android:layout_width="@dimen/x14"
+                    android:layout_height="@dimen/x14"
+                    android:src="@mipmap/img_like" />
+
+                <TextView
+                    android:id="@+id/tv_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1万"
+                    android:textSize="@dimen/x12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_stamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/ll_like"
+                android:layout_toRightOf="@id/ll_like"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/x2">
+
+                <ImageView
+                    android:id="@+id/iv_stamp"
+                    android:layout_width="@dimen/x14"
+                    android:layout_height="@dimen/x14"
+                    android:src="@mipmap/img_stamp" />
+
+                <TextView
+                    android:id="@+id/tv_stamp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1万"
+                    android:textSize="@dimen/x12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/x2">
+
+                <ImageView
+                    android:id="@+id/iv_comment"
+                    android:layout_width="@dimen/x14"
+                    android:layout_height="@dimen/x14"
+                    android:src="@mipmap/img_comment" />
+
+                <TextView
+                    android:id="@+id/tv_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1万"
+                    android:textSize="@dimen/x12" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="equipment_bg">#C10F151B</color>
+    <color name="equipment_bord">#DC0F151B</color>
+    <color name="col_6c0">#6C000000</color>
+
+    <color name="col_E64242">#E64242</color>
+
+    <color name="sddd">#FFF2F2F2</color>
+    <color name="item_border">#ebebeb</color>
+</resources>
